@@ -1,22 +1,22 @@
-# My Neovim Configuration
+# **😇 My Neovim Configuration 😇**
 
-## Plugins
+# **🔌 Plugins 👈**
 
-* tokyonight.nvim
-* nvim-treesitter
-* clangd LSP
-* telescope.nvim
-* nvim-tree.lua
-* bufferline.nvim
-* lualine.nvim
+> *tokyonight.nvim*
+> *nvim-treesitter*
+> *clangd LSP*
+> *telescope.nvim*
+> *nvim-tree.lua*
+> *bufferline.nvim*
+> *lualine.nvim*
 
-## Screenshots
+## **😎 UI Style 💁‍♂️**
 
 ![neovim-config](Screenshots/editor.png)
 
-## Requirements
+# **🔧 Requirements 🔨**
 
-* Neovim >= 0.9
-* ripgrep
-* clangd
-* Nerd Font
+> *Neovim >= 0.9*
+> *ripgrep*
+> *clangd*
+> *Nerd Font*
