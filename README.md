@@ -10,7 +10,7 @@
 * *bufferline.nvim*
 * *lualine.nvim*
 
-## **😎 UI Style 💁‍♂️**
+# **😎 UI Style 💁‍♂️**
 
 ![neovim-config](Screenshots/editor.png)
 
@@ -20,3 +20,5 @@
 * *ripgrep*
 * *clangd*
 * *Nerd Font*
+
+# **📦 Installation 🚀**
