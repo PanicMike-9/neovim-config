@@ -9,3 +9,10 @@
 * nvim-tree.lua
 * bufferline.nvim
 * lualine.nvim
+
+## Requirements
+
+* Neovim >= 0.9
+* ripgrep
+* clangd
+* Nerd Font
