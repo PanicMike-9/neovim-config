@@ -25,5 +25,6 @@
 ## 📦 Installation 🚀
 
 **Clone the repository**
-
+ ``` bash
 git clone https://github.com/PanicMike-9/neovim-config.git ~/.config/nvim
+```
