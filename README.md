@@ -10,6 +10,10 @@
 * bufferline.nvim
 * lualine.nvim
 
+## Screenshots
+
+![neovim-config](Screenshots/editor.png)
+
 ## Requirements
 
 * Neovim >= 0.9
