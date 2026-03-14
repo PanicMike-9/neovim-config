@@ -1,6 +1,6 @@
-# **😇 My Neovim Configuration 😇**
+# 😇 **My Neovim Configuration** 😇
 
-# **🔌 Plugins 👈**
+# 🔌 **Plugins** 👈
 
 * *tokyonight.nvim*
 * *nvim-treesitter*
@@ -14,11 +14,15 @@
 
 ![neovim-config](Screenshots/editor.png)
 
-# **🔧 Requirements 🔨**
+# 🔧 **Requirements** 🔨
 
 * *Neovim >= 0.9*
 * *ripgrep*
 * *clangd*
 * *Nerd Font*
 
-# **📦 Installation 🚀**
+# 📦 **Installation** 🚀
+
+**Clone the repository**
+
+git clone https://github.com/PanicMike-9/neovim-config.git ~/.config/nvim
