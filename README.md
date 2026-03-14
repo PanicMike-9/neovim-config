@@ -1,6 +1,7 @@
-# 😇 **My Neovim Configuration** 😇
+# 😇 My Neovim Configuration 😇
+## Minimal Neovim setup for easy navigation and clean look
 
-# 🔌 **Plugins** 👈
+## 🔌 Plugins 👈
 
 * *tokyonight.nvim*
 * *nvim-treesitter*
@@ -10,18 +11,18 @@
 * *bufferline.nvim*
 * *lualine.nvim*
 
-# **😎 UI Style 💁‍♂️**
+## 😎 UI Style 💁‍♂️
 
 ![neovim-config](Screenshots/editor.png)
 
-# 🔧 **Requirements** 🔨
+## 🔧 Requirements 🔨
 
 * *Neovim >= 0.9*
 * *ripgrep*
 * *clangd*
 * *Nerd Font*
 
-# 📦 **Installation** 🚀
+## 📦 Installation 🚀
 
 **Clone the repository**
 
