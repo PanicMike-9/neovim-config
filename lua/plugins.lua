@@ -9,41 +9,29 @@ return
         {
             style = "night",
         },
-        config = function()
+        config = function(_, opts)
+            require("tokyonight").setup(opts)
             vim.cmd("colorscheme tokyonight-night")
         end,
     },
 
-    -- zen mode
-    {
-        "folke/zen-mode.nvim",
-        opts = {
-            window = {
-                width = 120,
-                options = {
-                    number = true,
-                    relativenumber = false,
-                    cursorline = true,
-                },
-            },
-            plugins = {
-                options = {
-                    enabled = true,
-                    laststatus = 0,
-                },
-            },
-        },
-   },
-
    -- tree-sitter for high lights
     {
         "nvim-treesitter/nvim-treesitter",
-        lazy = false,
+        --lazy = false,
         build = ":TSUpdate",
-        main = "nvim-treesitter.config",
+
         opts = {
-            ensure_installed = { "lua", "c", "cpp", "vim", 
-            "markdown", "vimdoc", "query", },
+            ensure_installed = { 
+                "lua", 
+                "c", 
+                "cpp", 
+                "vim", 
+                "markdown", 
+                "vimdoc", 
+                "query", 
+            },
+
             auto_install = true,
 
             highlight = { enable = true },
@@ -130,6 +118,36 @@ return
                 themable = true,
             },
         },
+    },
+
+    -- rainbow delimiters
+    {
+        "HiPhish/rainbow-delimiters.nvim",
+        config = function()
+            local rainbow_delimiters = require("rainbow-delimiters")
+
+        vim.g.rainbow_delimiters = {
+            strategy = {
+                [''] = rainbow_delimiters.strategy.global,
+            },
+            query = {
+                [''] = 'rainbow-delimiters',
+                lua = 'rainbow-delimiters',
+                cpp = 'rainbow-delimiters',
+                c = 'rainbow-delimiters',
+
+            },
+            highlight = {
+                'RainbowDelimiterRed',
+                'RainbowDelimiterYellow',
+                'RainbowDelimiterBlue',
+                'RainbowDelimiterOrange',
+                'RainbowDelimiterGreen',
+                'RainbowDelimiterViolet',
+                'RainbowDelimiterCyan',
+            },
+        }
+      end
     },
 
 } -- return end
