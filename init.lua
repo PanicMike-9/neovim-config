@@ -56,3 +56,10 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- buffer switching keymappings
 vim.keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
+
+-- force start treesitter
+vim.api.nvim_create_autocmd("FileType", {
+    callback = function()
+        pcall(vim.treesitter.start)
+    end,
+})
