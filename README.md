@@ -10,6 +10,7 @@
 * *nvim-tree.lua*
 * *bufferline.nvim*
 * *lualine.nvim*
+* *rainbow-delimiters*
 
 ## 😎 UI Style 💁‍♂️
 
@@ -27,5 +28,4 @@
 **Clone the repository**
  ``` bash
 git clone https://github.com/PanicMike-9/neovim-config.git ~/.config/nvim
-nvim
 ```
