@@ -12,7 +12,7 @@
 * *lualine.nvim*
 * *rainbow-delimiters*
 
-## 😎 UI Style 💁‍♂️
+## 😎 Look 💁‍♂️
 
 ![neovim-config](screenshots/editor.png)
 
