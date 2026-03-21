@@ -14,7 +14,7 @@
 
 ## 😎 UI Style 💁‍♂️
 
-![neovim-config](Screenshots/editor.png)
+![neovim-config](screenshots/editor.png)
 
 ## 🔧 Requirements 🔨
 
