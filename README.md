@@ -1,7 +1,7 @@
-# 😇 My Neovim Configuration 😇
+#  My Neovim Configuration 
 ## Minimal Neovim setup for easy navigation and clean look
 
-## 🔌 Plugins 👈
+## Plugins 
 
 * *tokyonight.nvim*
 * *nvim-treesitter*
@@ -12,20 +12,20 @@
 * *lualine.nvim*
 * *rainbow-delimiters*
 
-## 😎 Look 💁‍♂️
+## Look 
 
 ![neovim-config](screenshots/editor.png)
 
-## 🔧 Requirements 🔨
+##  Requirements 
 
 * *Neovim >= 0.9*
 * *ripgrep*
 * *clangd*
 * *Nerd Font*
 
-## 📦 Installation 🚀
+## Installation 
 
 **Clone the repository**
  ``` bash
-git clone https://github.com/PanicMike-9/neovim-config.git ~/.config/nvim
+     git clone https://github.com/PanicMike-9/neovim-config.git ~/.config/nvim
 ```
