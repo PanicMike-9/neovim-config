@@ -57,9 +57,37 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
 
+-- buffer closing keymappings
+vim.keymap.set("n", "<leader>q", vim.cmd.bd)
+
 -- force start treesitter
 vim.api.nvim_create_autocmd("FileType", {
     callback = function()
         pcall(vim.treesitter.start)
     end,
 })
+
+-- CodeChef Boiler plate snippet
+vim.keymap.set('i', 'chef', function()
+    local lines = {
+        "#include <bits/stdc++.h>",
+        "    ",
+        "int main()",
+        "{",
+        "    std::ios_base::sync_with_stdio(false);",
+        "    std::cin.tie(NULL);",
+        "    ",
+        "    int t {};",
+        "    std::cin >> t;",
+        "    ",
+        "    while (t--)",
+        "    {",
+        "    }",
+        "     ",
+        "    return 0;",
+        "}"
+    } 
+    vim.api.nvim_put(lines, 'c', true, true)
+    vim.cmd("normal! 3k_")
+    return ""
+end, { desc = "CodeChef  Boilerplate" })
