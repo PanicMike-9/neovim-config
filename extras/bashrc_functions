@@ -1,0 +1,30 @@
+# paste these at the very bottom of your .bashrc to use, then run source ~/.bashrc in your terminal
+# alias for c++ 23 flags
+alias g++='g++ -std=c++23'
+
+# quick function to run C++ 23
+cpprun() {
+    if [ -z "$1" ]; then
+        echo "Usage: cpprun <filename.cpp> "
+        return 1
+    fi
+    g++ -std=c++23 "$1" -o run && ./run
+}
+
+# run and compile with warnings
+cppdbg() {
+    if [ -z "$1" ]; then
+        echo "Usage: cppdbg <filename.cpp> "
+        return 1
+    fi
+    g++ -std=c++23 -Wall -Wextra -Wpedantic "$1" -o run && ./run
+}
+
+# high-performance optimized compile with -O2
+cppopt() {
+    if [ -z "$1" ]; then
+        echo "Usage: cppopt <filename.cpp> "
+        return 1
+    fi
+    g++ -std=c++23 -Wall -Wextra -Wpedantic -O2 "$1" -o run && ./run
+}
