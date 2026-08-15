@@ -72,10 +72,25 @@ vim.keymap.set('i', 'chef', function()
     local lines = {
         "#include <bits/stdc++.h>",
         "    ",
+        "using i64 = std::int64_t;",
+        "using u64 = std::uint64_t;",
+        "using usize = std::size_t;",
+        "    ",
+        "using vi = std::vector<int>;",
+        "using vll = std::vector<long long>;",
+        "using v64 = std::vector<i64>;",
+        "using p64 = std::pair<i64, i64>;",
+        "    ",
+        "using pii = std::pair<int, int>;",
+        "using pll = std::pair<long long, long long>;",
+        "    ",
+        'constexpr std::string_view YES = "YES\\n";',
+        'constexpr std::string_view NO = "NO\\n";',
+        "    ",
         "int main()",
         "{",
         "    std::ios_base::sync_with_stdio(false);",
-        "    std::cin.tie(NULL);",
+        "    std::cin.tie(nullptr);",
         "    ",
         "    int t {};",
         "    std::cin >> t;",
@@ -85,9 +100,10 @@ vim.keymap.set('i', 'chef', function()
         "    }",
         "     ",
         "    return 0;",
-        "}"
+        "}",
     } 
     vim.api.nvim_put(lines, 'c', true, true)
     vim.cmd("normal! 3k_")
     return ""
 end, { desc = "CodeChef  Boilerplate" })
+
