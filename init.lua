@@ -70,6 +70,7 @@ vim.api.nvim_create_autocmd("FileType", {
 -- CodeChef Boiler plate snippet
 vim.keymap.set('i', 'chef', function()
     local lines = {
+        "// Solved: No",
         "#include <bits/stdc++.h>",
         "    ",
         "using i64 = std::int64_t;",
@@ -77,33 +78,44 @@ vim.keymap.set('i', 'chef', function()
         "using usize = std::size_t;",
         "    ",
         "using vi = std::vector<int>;",
-        "using vll = std::vector<long long>;",
+        "using vipii = std::vector<std::pair<int, int>>;",
         "using v64 = std::vector<i64>;",
-        "using p64 = std::pair<i64, i64>;",
         "    ",
         "using pii = std::pair<int, int>;",
-        "using pll = std::pair<long long, long long>;",
+        "using p64 = std::pair<i64, i64>;",
         "    ",
-        'constexpr std::string_view YES = "YES\\n";',
-        'constexpr std::string_view NO = "NO\\n";',
+        "auto& out = std::cout;",
+        "auto& in = std::cin;",
         "    ",
+        'static constexpr std::string_view Y = "YES\\n";',
+        'static constexpr std::string_view N = "NO\\n";',
+        "    ",
+        "inline void read_vec(int sz, vi& a)",
+        "{",
+        "    for (int i = 0; i < sz; ++i) in >> a[i];",
+        "}",
+        "    ",
+        "void solve()",
+        "{",
+        "}",
+        "   ",
         "int main()",
         "{",
         "    std::ios_base::sync_with_stdio(false);",
         "    std::cin.tie(nullptr);",
         "    ",
-        "    int t {};",
+        "    int t {1};",
         "    std::cin >> t;",
         "    ",
         "    while (t--)",
         "    {",
+        "        solve();",
         "    }",
         "     ",
         "    return 0;",
         "}",
     } 
     vim.api.nvim_put(lines, 'c', true, true)
-    vim.cmd("normal! 3k_")
+    vim.cmd("normal! 17k_")
     return ""
 end, { desc = "CodeChef  Boilerplate" })
-
