@@ -4,27 +4,28 @@ alias g++='g++ -std=c++23'
 
 # quick function to run C++ 23
 cpprun() {
-    if [ -z "$1" ]; then
-        echo "Usage: cpprun <filename.cpp> "
+    if [ $# -eq 0 ]; then
+        echo "Usage: cpprun <filename.cpp> [more files...] "
         return 1
     fi
-    g++ -std=c++23 "$1" -o run && ./run
+    g++ -std=c++23 "$@" -o run && ./run
 }
 
 # run and compile with warnings
 cppdbg() {
-    if [ -z "$1" ]; then
-        echo "Usage: cppdbg <filename.cpp> "
+    if [ $# -eq 0 ]; then
+        echo "Usage: cppdbg <filename.cpp> [more files...] "
         return 1
     fi
-    g++ -std=c++23 -Wall -Wextra -Wpedantic "$1" -o run && ./run
+    g++ -std=c++23 -Wall -Wextra -Wpedantic "$@" -o run && ./run
 }
 
 # high-performance optimized compile with -O2
 cppopt() {
-    if [ -z "$1" ]; then
-        echo "Usage: cppopt <filename.cpp> "
+    if [ $# -eq 0 ]; then
+        echo "Usage: cppopt <filename.cpp> [more files...] "
         return 1
     fi
-    g++ -std=c++23 -Wall -Wextra -Wpedantic -O2 "$1" -o run && ./run
+    g++ -std=c++23 -Wall -Wextra -Wpedantic -O2 "$@" -o run && ./run
 }
+
