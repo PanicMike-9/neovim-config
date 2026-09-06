@@ -1,0 +1,44 @@
+" Leader key configuration
+let mapleader = " "
+
+" Basic Editor & Formatting Options
+set scrolloff=10
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Insert mode mapping: jk to Escape
+inoremap jk <Esc>
+
+" Search settings
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Movement & Centering
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Clear search highlights
+nnoremap <leader>h :nohlsearch<CR>
+
+" File actions
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+" Quick Open / Active Files
+nnoremap <leader>f :vsc Edit.GoToAll<CR>
+nnoremap <leader>b :vsc Window.ActiveFilesList<CR>
+
+" Errors & Diagnostics
+nnoremap <leader>d :vsc View.ErrorList<CR>
+
+" Formatting & Code Cleanup
+nnoremap <leader>fm :vsc Edit.FormatDocument<CR>
+vnoremap <leader>fm :vsc Edit.FormatSelection<CR>
+nnoremap <leader>oi :vsc Edit.RemoveAndSort<CR>
+nnoremap <leader>cf :vsc Edit.FormatDocument<CR>:vsc Edit.RemoveAndSort<CR>
+
+" Refactoring
+nnoremap <leader>rn :vsc Refactor.Rename<CR>
