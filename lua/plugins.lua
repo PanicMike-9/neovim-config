@@ -149,5 +149,14 @@ return
         }
       end
     },
+	
+	-- my quick comment function
+    {
+        dir = vim.fn.stdpath("config") .. "/lua",
+        name = "quick_comment", 
+        config = function()
+            require("quick_comment").setup()
+        end,
+    },
 
 } -- return end
