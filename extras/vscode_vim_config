@@ -48,4 +48,8 @@
             "before": ["<leader>", "b"],
             "commands": ["workbench.action.showAllEditors"]
         },
+        {
+            "before": ["<leader>", "d"],
+            "commands": ["editor.action.showHover"]
+        },
     ],
