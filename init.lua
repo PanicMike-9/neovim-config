@@ -90,6 +90,8 @@ vim.keymap.set('i', 'chef', function()
         'static constexpr std::string_view Y = "YES\\n";',
         'static constexpr std::string_view N = "NO\\n";',
         "    ",
+        "constexpr char nl {'\\n'};",
+        "    ",
         "inline void read_vec(int sz, vi& a)",
         "{",
         "    for (int i {}; i < sz; ++i) in >> a[i];",
